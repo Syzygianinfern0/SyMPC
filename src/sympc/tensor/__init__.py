@@ -2,15 +2,9 @@
 
 
 from .share_tensor import ShareTensor  # isort:skip
-from .grads import GRAD_FUNCS
-from .mpc_tensor import METHODS_TO_ADD
-from .mpc_tensor import MPCTensor
+from .mpc_tensor import MPCTensor  # isort: skip
+from . import grads
+from . import static
 from .replicatedshare_tensor import ReplicatedSharedTensor
 
-__all__ = [
-    "ShareTensor",
-    "ReplicatedSharedTensor",
-    "MPCTensor",
-    "METHODS_TO_ADD",
-    "GRAD_FUNCS",
-]
+__all__ = ["ShareTensor", "ReplicatedSharedTensor", "MPCTensor", "static", "grads"]
