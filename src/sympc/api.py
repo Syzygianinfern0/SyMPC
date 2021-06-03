@@ -60,7 +60,6 @@ allowed_external_classes = [
     ),
 ]
 
-
 share_tensor_attrs = [
     (
         "sympc.tensor.ShareTensor.__add__",
